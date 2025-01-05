@@ -61,6 +61,8 @@ Token A: [0x3a21C919cE86e6e11F318638e582d36361a93C54](https://sepolia.etherscan.
 
 Token B: [0xc66d55434782B02ebb4Baf8Dc559c7b95bB035D5](https://sepolia.etherscan.io/address/0xc66d55434782B02ebb4Baf8Dc559c7b95bB035D5)
 
+Deployer: [0x87B06f8ecAeE3378a414aaD45Aa08F8a18003FD4](https://sepolia.etherscan.io/address/0x87b06f8ecaee3378a414aad45aa08f8a18003fd4)
+
 1. Create a pool V3 on sushiswap
 
     Command: `node dist/scripts/createPoolV3.js`
