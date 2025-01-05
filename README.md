@@ -57,15 +57,15 @@ $ node dist/scripts/<script_name.js>
 
 Note: For the Demo whe need a wallet with 2 ERC20 token to create a pool V3 on sushiswap
 
-Token A: 0x3a21C919cE86e6e11F318638e582d36361a93C54
+Token A: [0x3a21C919cE86e6e11F318638e582d36361a93C54](https://sepolia.etherscan.io/address/0x3a21C919cE86e6e11F318638e582d36361a93C54)
 
-Token B: 0xc66d55434782B02ebb4Baf8Dc559c7b95bB035D5
+Token B: [0xc66d55434782B02ebb4Baf8Dc559c7b95bB035D5](https://sepolia.etherscan.io/address/0xc66d55434782B02ebb4Baf8Dc559c7b95bB035D5)
 
 1. Create a pool V3 on sushiswap
 
     Command: `node dist/scripts/createPoolV3.js`
 
-    Pool created: 0x3Ecc8cFC6253378fd93E7Ff76d0938649AaDd485
+    Pool created: [0x3Ecc8cFC6253378fd93E7Ff76d0938649AaDd485](https://sepolia.etherscan.io/address/0x3Ecc8cFC6253378fd93E7Ff76d0938649AaDd485)
 
     Tx hash: [0x5e71335589b838e92b5c6e32c33341c2e16f3ad3fe534aa288947b7bd7a3675c](https://sepolia.etherscan.io/tx/0x5e71335589b838e92b5c6e32c33341c2e16f3ad3fe534aa288947b7bd7a3675c)
 
