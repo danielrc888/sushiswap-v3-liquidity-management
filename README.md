@@ -6,24 +6,33 @@ SushiSwap V3 is the latest upgrade to the decentralized exchange protocol, intro
 
 ## Requirements
 
-1. User can create a liquidity position
-2. User can monitor position status
-3. User can adjust Price Range
-4. User can withdraw liquidity
+1. User can create a liquidity position.
+2. User can monitor position status.
+3. User can adjust Price Range.
+4. User can withdraw liquidity.
 
 ## Project setup
 
 Note: This project uses node version `22.11.0`
 
-1. Clone the repository
+1. Clone the repository.
     ```
     $ git clone https://github.com/danielrc888/sushiswap-v3-liquidity-management.git
     ```
-2. Install dependencies
+2. Install dependencies.
 
     ```
     $ npm install
     ```
+
+3. Create an `.env` file and add `RPC_URL` and `WALLET_PRIVATE_KEY` variables like in the `.env.sample` file.
+
+4. Build the project
+
+    ```
+    $ npm run build
+    ```
+
 ## Project structure
 
 This project contains 2 folders (`blockchain/` and `script/`). 
@@ -35,6 +44,14 @@ This project contains 2 folders (`blockchain/` and `script/`).
 - `script/` folder
 
     In the script folder we have the scripts used to meet the requirements. It also contains script for the testnet setup.
+
+## Run a script
+
+To run a script you can run this command after building the project
+
+```    
+$ node dist/scripts/<script_name.js>
+```
 
 ## Demo on Sepolia ETH Testnet
 
@@ -79,8 +96,11 @@ Note: For the Demo whe need a wallet with 2 ERC20 token to create a pool V3 on s
 
     Tx hash: 0x7917bf8d2260dec6d1362ba04382e445f6d26f6d0987dc5324a9ac0fa62f06ff
 
+
 8. Monitor positions from and address
 
 ## Screenshots
 
+
+- Monitor positions from an address
 
