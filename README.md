@@ -1,0 +1,86 @@
+# SushiSwap V3 Liquidity Management
+
+## Description
+
+SushiSwap V3 is the latest upgrade to the decentralized exchange protocol, introducing concentrated liquidity and range orders. These features enhance efﬁciency and allow liquidity providers to allocate their capital within speciﬁc price ranges, increasing fee earnings.
+
+## Requirements
+
+1. User can create a liquidity position
+2. User can monitor position status
+3. User can adjust Price Range
+4. User can withdraw liquidity
+
+## Project setup
+
+Note: This project uses node version `22.11.0`
+
+1. Clone the repository
+    ```
+    $ git clone https://github.com/danielrc888/sushiswap-v3-liquidity-management.git
+    ```
+2. Install dependencies
+
+    ```
+    $ npm install
+    ```
+## Project structure
+
+This project contains 2 folders (`blockchain/` and `script/`). 
+
+- `blockchain/` folder
+
+    In the `blockchain/` folder we have sushi deployed address for Sepolia testnet and variables such as the `provider` and `wallet` that are used for calling transactions.
+
+- `script/` folder
+
+    In the script folder we have the scripts used to meet the requirements. It also contains script for the testnet setup.
+
+## Demo on Sepolia ETH Testnet
+
+Note: For the Demo whe need a wallet with 2 ERC20 token to create a pool V3 on sushiswap
+
+1. Create a pool V3 on sushiswap
+
+    Tx hash: 0x5e71335589b838e92b5c6e32c33341c2e16f3ad3fe534aa288947b7bd7a3675c
+
+2. Initialize the pool V3
+
+    Tx hash: 0xcf56a4be13f76f93bd6983ade1ec8551e71dea959d7e09695840b67bc4b9d8fb
+
+3. Approve both tokens to the Sushi Position Manager
+
+    Tx hash: 0x14271d617e82fd891357818e7c6bfa5d9d639ced6b12fc9dbe8408a75b123f24
+
+    Tx hash: 0x521d58dcd037a2e79eaad66058ed5aec917cc98ebb8cf72060bc972ba291ca72
+
+4. Create a position in the pool V3
+
+    Tx hash: 0xc79fd5a206c4fa086edb49cb13ec6d3f30c9b21131b69b6aae5a04fc81cac994
+
+5. Approve both tokens to the Sushi Swap Router
+
+    Tx hash 1: 0x2a47889e840165f4a784f82ecf0ccf3ee713c1b05f9983ee9a584b4d688a36d8
+    Tx hash 2: 0xbaa224e2af7bf2a3089a1bca139666801e0b43dcf86d8e55f0887caf0ade74b7
+
+5. Swap tokens on pool V3
+
+    Tx hash: 0x3c4533255d3b86666ce541cb6176468fe8e91c30f951a486810bf845a659d42e
+
+5. Add liquidity to the Position
+
+    Tx hash: 0x5d3530f2b2792902104ba9467ca92e79b68639bd0e210a43c647283c633f0c7d
+
+6. Remove and callect feed (Both in 1 tx)
+
+    Tx hash: 0x62474430889d313e247d704d5181f2e560295899238b69ca233a8dcdf06fe8cd
+
+7. Collect fees
+
+    Tx hash: 0x7917bf8d2260dec6d1362ba04382e445f6d26f6d0987dc5324a9ac0fa62f06ff
+
+8. Monitor positions from and address
+
+## Screenshots
+
+
