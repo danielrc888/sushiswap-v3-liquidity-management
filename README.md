@@ -57,15 +57,27 @@ $ node dist/scripts/<script_name.js>
 
 Note: For the Demo whe need a wallet with 2 ERC20 token to create a pool V3 on sushiswap
 
+Token A: 0x3a21C919cE86e6e11F318638e582d36361a93C54
+
+Token B: 0xc66d55434782B02ebb4Baf8Dc559c7b95bB035D5
+
 1. Create a pool V3 on sushiswap
+
+    Command: `node dist/scripts/createPoolV3.js`
+
+    Pool created: 0x3Ecc8cFC6253378fd93E7Ff76d0938649AaDd485
 
     Tx hash: [0x5e71335589b838e92b5c6e32c33341c2e16f3ad3fe534aa288947b7bd7a3675c](https://sepolia.etherscan.io/tx/0x5e71335589b838e92b5c6e32c33341c2e16f3ad3fe534aa288947b7bd7a3675c)
 
 2. Initialize the pool V3
 
+    Command: `node dist/scripts/initializePoolV3.js`
+
     Tx hash: [0xcf56a4be13f76f93bd6983ade1ec8551e71dea959d7e09695840b67bc4b9d8fb](https://sepolia.etherscan.io/tx/0xcf56a4be13f76f93bd6983ade1ec8551e71dea959d7e09695840b67bc4b9d8fb)
 
 3. Approve both tokens to the Sushi Position Manager
+
+    Command: `node dist/scripts/approveTokens.js`
 
     Tx hash 1: [0x14271d617e82fd891357818e7c6bfa5d9d639ced6b12fc9dbe8408a75b123f24](https://sepolia.etherscan.io/tx/0x14271d617e82fd891357818e7c6bfa5d9d639ced6b12fc9dbe8408a75b123f24)
 
@@ -73,9 +85,13 @@ Note: For the Demo whe need a wallet with 2 ERC20 token to create a pool V3 on s
 
 4. Create a position in the pool V3
 
+    Command: `node dist/scripts/createLiquidityPosition.js`
+
     Tx hash: [0xc79fd5a206c4fa086edb49cb13ec6d3f30c9b21131b69b6aae5a04fc81cac994](https://sepolia.etherscan.io/tx/0xc79fd5a206c4fa086edb49cb13ec6d3f30c9b21131b69b6aae5a04fc81cac994)
 
 5. Approve both tokens to the Sushi Swap Router
+
+    Command: `node dist/scripts/approveTokens.js`
 
     Tx hash 1: [0x2a47889e840165f4a784f82ecf0ccf3ee713c1b05f9983ee9a584b4d688a36d8](https://sepolia.etherscan.io/tx/0x2a47889e840165f4a784f82ecf0ccf3ee713c1b05f9983ee9a584b4d688a36d8)
 
@@ -83,22 +99,32 @@ Note: For the Demo whe need a wallet with 2 ERC20 token to create a pool V3 on s
 
 5. Swap tokens on pool V3
 
+    Command: `node dist/scripts/swapTokensPoolV3.js`
+
     Tx hash: [0x3c4533255d3b86666ce541cb6176468fe8e91c30f951a486810bf845a659d42e](https://sepolia.etherscan.io/tx/0x3c4533255d3b86666ce541cb6176468fe8e91c30f951a486810bf845a659d42e)
 
 5. Add liquidity to the Position
+
+    Command: `node dist/scripts/addLiquidityToPosition.js`
 
     Tx hash: [0x5d3530f2b2792902104ba9467ca92e79b68639bd0e210a43c647283c633f0c7d](https://sepolia.etherscan.io/tx/0x5d3530f2b2792902104ba9467ca92e79b68639bd0e210a43c647283c633f0c7d)
 
 6. Remove and collect fees (Both in 1 tx)
 
+    Command: `node dist/scripts/removeLiquidityToPosition.js`
+
     Tx hash: [0x62474430889d313e247d704d5181f2e560295899238b69ca233a8dcdf06fe8cd](https://sepolia.etherscan.io/tx/0x62474430889d313e247d704d5181f2e560295899238b69ca233a8dcdf06fe8cd)
 
 7. Collect fees
+
+    Command: `node dist/scripts/collectFeesFromPosition.js`
 
     Tx hash: [0x7917bf8d2260dec6d1362ba04382e445f6d26f6d0987dc5324a9ac0fa62f06ff](https://sepolia.etherscan.io/tx/0x7917bf8d2260dec6d1362ba04382e445f6d26f6d0987dc5324a9ac0fa62f06ff)
 
 
 8. Monitor positions from and address
+
+    Command: `node dist/scripts/monitorPositions.js`
 
 ## Screenshots
 
